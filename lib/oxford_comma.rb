@@ -5,7 +5,7 @@ def oxford_comma(array)
     when 2
       array.join(" and ")
     else
-      string = []
+      string = ""
       index = 0
       while index < array.length-1
         string << "#{array[index]}, "
