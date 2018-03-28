@@ -8,5 +8,10 @@ def oxford_comma(array)
       string = []
       index = 0
       while index < array.length-1
-        array.join(", ")
+        string << "#{array[index]}, "
+        index += 1
+      end
+      string << "and #{array[-1]}"
+      string
+    end
 end
